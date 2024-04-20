@@ -6,3 +6,6 @@ Full documentation can be found here: https://drive.google.com/file/d/1M6T6x1b5o
 **PROJECT DESCRIPTION**
 
 The Amazon Product Awesomeness Reviewer is a machine learning model that determines if an Amazon product is awesome or not based on a set of reviews of that product. 
+The raw features of the training set: asin (the id of the product reviewed), reviewerID, unixReviewTime, vote, verified, reviewerName, reviewText, summary, and awesomeness (the target value and determines if the product under review is awesome or not. From there, extra features were engineered such as reviewText sentiments and summary sentiments. 
+
+Then, several models were tested with the SciKit Learn library. The best performing model was the Decision Tree with a bagging additive. 
